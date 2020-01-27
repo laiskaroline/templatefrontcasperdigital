@@ -1,0 +1,220 @@
+.menu-principal
+	display: flex!important
+	justify-content: space-between!important
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 99999
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.35)
+
+.logos
+	display: flex!important
+	justify-content: space-between!important
+
+nav
+	display: flex!important
+	justify-content: space-between!important
+
+.menu ul
+	display: flex!important
+	justify-content: space-between!important
+
+.menu-principal
+	padding: 1vh 1vw
+
+nav
+	padding: 1vh 1vw
+
+nav.menu
+	align-items: baseline
+
+.menu ul
+	margin-right: 3vw
+
+header
+	background: #314b64
+
+.logos
+	padding: 15px 30px
+
+.logo-faculdade
+	padding: 7px 15px 0 0
+	border-right: 1px solid #fff
+
+.logo-casper
+	padding-left: 15px
+
+.menu
+	li
+		margin-right: 20px
+
+		a
+			font-family: $font-principal
+			font-weight: 400
+			color: #fff
+			font-size: 14px
+			text-transform: uppercase
+			transition: .5s
+			&:hover
+				text-decoration: none
+				border-bottom: 1px solid #d9d123
+				transition: .5s
+
+span.menu-text
+	display: none
+
+.telefones
+	font-family: $font-principal
+	color: #fff
+	font-size: 22px
+	text-transform: uppercase
+	padding: 10px 30px 10px 0
+	text-align: right
+
+span.text-small
+	font-size: 15px
+	padding: 3px
+
+.descricao
+	display: block
+	font-size: .45em
+
+
+
+//Media Querie Intermediária
+@media (min-width: 1301px) and (max-width: 1500px)
+	nav.menu
+		align-items: center
+
+	.menu
+		li
+			margin-right: 15px
+			a
+				font-size: 13px
+	.hide-menu
+		i
+			color: #fff
+			font-size: 25px
+			padding: 1.3vh 2vw 0 0
+	a.interesse
+		padding: 15px 10px
+		text-align: center
+		font-size: 13px
+		&:hover
+			padding: 15px 10px
+
+	.telefones
+		padding: 10px 20px 0 0
+
+@media (min-width: 1281px) and (max-width: 1440px)
+	.menu-principal
+		padding: 3vh 1.8vw
+
+	nav 
+		padding: 0
+
+	nav.menu
+		align-items: center
+		flex-direction: row
+		position: absolute
+		right: 180px
+
+	.logos
+		padding: 0
+
+	a.interesse
+		margin: 0
+		padding: 8px
+		font-size: 16px
+		&:hover
+			padding: 8px
+
+	.telefones
+		padding: 0
+		font-size: 18px
+
+	.descricao
+		line-height: 5px
+		font-size: 0.50em
+
+	i.hide-menu
+		color: #fff
+		font-size: 27px
+		padding: 0 2vw 0 0
+		display: none!important
+
+	.menu
+		ul 
+			margin-right: 0 
+
+			li
+				margin-right: 10px
+				a 
+					font-size: 12px
+					padding-right: 10px
+
+
+@media (min-width: 768px) and (max-width: 1280px)
+	.menu-principal
+		padding: 3vh 1.8vw
+
+	nav 
+		padding: 0
+
+	nav.menu
+		align-items: center
+		flex-direction: row-reverse
+		position: absolute
+		right: 0
+
+	.logos
+		padding: 0
+
+	a.interesse
+		margin: 0 25vw 0 0
+		padding: 8px 15px
+		&:hover
+			padding: 8px 15px
+
+	.telefones
+		padding: 0 8vw 0 0
+
+	.descricao
+		line-height: 5px
+
+	i.hide-menu
+		color: #fff
+		font-size: 27px
+		padding: 0 2vw 0 0
+		display: block!important
+
+	.menu ul
+		display: none!important
+
+
++phone
+	.telefones, .menu ul, .interesse
+		display: none!important
+
+	.logos
+		padding: 10px 15px
+
+
+	i.hide-menu
+		color: #fff
+		font-size: 25px
+		padding: 1.3vh 4vw 0 0
+
+//Específico para o alto contraste
+.alto-contraste
+	header
+		background: #000
+		box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.35)
+
+	@media (min-width: 768px) and (max-width: 1199px)
+		a.interesse
+			margin: 0 25vw 0 0
+			padding: 8px 15px
+			&:hover
+				padding: 8px 15px

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="description" content="Cursos de Pós-Graduação EAD na Faculdade Cásper Líbero">
+
+  	<!--Específico para o funcionamento das tabs-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--Específico para o funcionamento das tabs-->
+
+	<script type="text/javascript" href="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" href="node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" href="node_modules/angular-resource/angular-resource.min.js"></script>
+	<script type="text/javascript" href="node_modules/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" href="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+	<script type="text/javascript" href="bower_components/ng-module/ng-module.js"></script>
+
+	<script type="text/javascript" href="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/animate.css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/dist/owl.carousel.min.css">
+	<script type="text/javascript" src="assets/dist//owl.carousel.min.js"></script>
+
+	<script type="text/javascript" href="assets/dist/base-landing.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/dist/base-landing.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+	<title>Pós-Graduação - EAD - Educação a Distância - Cásper Digital</title>
+</head>
+
+<body class="baixo-contraste">
+<!--Menu-->
+	<header class="menu-principal">
+		<div class="logos">
+			<div class="logo-faculdade">
+				<a href="https://casperlibero.edu.br/" name="Faculdade Cásper Líbero" target="_blank" rel="noopener" tabindex="0"><img src="assets/images/svg/logo-faculdade-casper-libero.svg" alt="Logo da Faculdade Cásper Líbero" width="100px" /></a>
+			</div>
+			<div class="logo-casper">
+				<a href="https://casperdigital.casperlibero.edu.br/" name="Cásper Digital" tabindex="1"><img src="assets/images/svg/logo-casper-digital.svg" alt="Logo Cásper Digital" width="100px"/></a>
+			</div>
+		</div>
+		<nav class="menu">
+		<i class="hide-menu hidden-lg header__nav-icon header__nav-icon--js fa fa-bars" aria-hidden="true" name="icone menu"></i>
+			<ul>
+				<li><a href="#" name="A Casper" tabindex="3">A Cásper</a></li>
+				<li><a href="#" name="Metodologia">Metodologia</a></li>
+				<li><a href="#" name="Como Funciona">Como Funciona</a></li>
+				<li><a href="#" name="Tradição Cásper">Tradição Cásper</a></li>
+				<li><a href="#" name="Cursos">Cursos</a></li>
+				<li><a href="#" name="Contato">Contato</a></li>
+			</ul>
+			<a href="#" name="Botão Registrar Interesse" class="interesse" data-toggle="modal" data-target="#myModalform" >Registrar Interesse</a>
+		</nav>
+		<div class="telefones">
+			<span class="text-small">11</span> 3170-5438
+			<span class="descricao">Atendimento Secretaria</span>
+		</div>
+	</header>
+
+<main>
+<!--Banner Principal-->
+	<section class="bloco-principal">
+		<div class="banner">
+			<div type="button" class="btn-contrast"><img src="assets/images/svg/icon-contrast.svg" /></div>
+			<div type="button" class="btn-libras" data-toggle="modal" data-target="#myModal"><img src="assets/images/svg/icon-libra.svg" /></div>
+			<div class="container">
+        <div class="align-content">
+  				<div class="description-chamada">
+  					<h1>Paixão por Comunicação</h1>
+  					<h2>Agora no ensino a distância</h2>
+  					<h5>Academia e mercado se encontra aqui.</h5>
+  					<a href="#" class="baixo-contraste btns-padrao action-banner" name="Botão Como Funciona">Como Funciona</a>
+  				</div>
+  				<div class="people">
+          </div>
+        </div>
+			</div>
+		</div>
+	</section>
+<!--Modal VLibras-->
+<div class="container cd-modal-vlibras">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title">Vlibras</h2>
+        </div>
+        <div class="modal-body">
+        	<div class="instrucoes">
+				<p>Para ativar a linguagem em libras, é necessário <strong>instalar </strong>o aplicativo VLibras em seu <strong> navegador </strong>ou <strong>smartphones</strong> e <strong>tablets</strong>.</p>
+				<h4> Baixe agora mesmo o VLibras</h4>
+			</div>
+			<div class="navegadores">
+				<ul class="nav nav-tabs vlibras">
+					<li class="active"><a data-toggle="tab" href="#navegadores">Para navegadores</a></li>
+					<li><a data-toggle="tab" href="#devices">Para Devices</a></li>
+				</ul>
+
+			<div class="tab-content">
+				<div id="navegadores" class="tab-pane fade in active icons-nav">
+					<a href="#" class="icon-nav"><img src="assets/images/svg/chrome.svg" class="svg" alt="icone navegador Chrome" />Chrome</a>
+					<a href="#" class="icon-nav"><img src="assets/images/svg/firefox.svg" class="svg" alt="icone navegador Firefox"/>Firefox</a>
+					<a href="#" class="icon-nav"><img src="assets/images/svg/safari.svg" class="svg" alt="icone navegador Safari"/>Safari</a>
+				</div>
+				<div id="devices" class="tab-pane fade icons-nav">
+					opções de devices
+				</div>
+			</div>
+          </div>
+          <div class="instrucoes">
+			<p> Caso já possua o aplicativo <strong> instalado em seu navegador</strong>, selecione o texto que será traduzido e clicando com o botão direito do mouse, clique na imagem <span class="vlibras-destaque">Traduzir</span> e pronto.</p>
+			</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--Modal Formulário de Interesse-->
+	<div class="container cd-modal-formulario">
+	  <!-- Modal -->
+	  <div class="modal fade" id="myModalform" role="dialog">
+	    <div class="modal-dialog">
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">X</button>
+	          <h2 class="modal-title">Cadastre-se para receber avisos sobre novas turmas deste curso</h2>
+	        </div>
+	        <div class="modal-body">
+					<form action="">
+						<div class="field"><input type="text" name="nome" maxlength="10" placeholder="Nome"></div>
+						<div class="field"><input type="email" name="email" placeholder="E-mail"></div>
+						<div class="field"><input type="number" name="telefone" placeholder="Telefone"></div>
+						<select name="cursos">
+							<option value="curso" class="titulo">Selecione o curso</option>
+							<option value="curso">Curso 1</option>
+							<option value="curso">Curso 2</option>
+							<option value="curso">Curso 3</option>
+							<option value="curso">Curso 4</option>
+						</select>
+						<div class="field"><textarea type="textarea" rows="10" cols="30" name="mensagem" placeholder="Mensagem"></textarea></div>
+						<div class="field">
+							<p>Para mais informações entre em contato pelo telefone <span class="fone">(11) 3170-5438</span>.</p>
+							<input type="submit" value="TENHO INTERESSE">
+						</div>
+						<div class="seila"></div>
+
+					</form>
+	        </div>
+	      </div>
+
+	    </div>
+	  </div>
+	</div>
+<!--Bloco Vídeo-->
+	<section class="cd-bl-video">
+		<div class="cd-video-geral">
+			<div class="bl-video">
+				<!--<p class="legenda-video"> Assista à apresentação conheça a cásper digital</p>-->
+				<!--<video width="100%">
+					<source src="assets/images/videos/modelo" type="video/mp4">
+					<source src="assets/images/videos/modelo" type="video/ogg">
+				</video>-->
+			</div>
+			<span class="legenda-video"></span>
+			<div class="bl-video-texto">
+				<h2 class="text-title-conheca"><span>Conheça a</span>cásper digital</h2>
+				<p class="light">A Cásper Digital acompanha você em sua rotina. Estude em qualquer lugar com qualquer dispositivo conectado à internet. Está em suas mãos a oportunidade de enriquecer sua formação profissional e acadêmica.</p>
+				<a href="#" class="btns-padrao action-page" name="Botão Conheça Mais">Conheça Mais</a>
+			</div>
+		</div>
+	</section>
+<!--Bloco Metodologia-->
+	<section class="cd-bl-metodo">
+		<h1 class="title-section">Nossa <span>Metodologia</span><br> Promove</h1>
+		<div class="metodos">
+			<div class="bl-metodo">
+				<div class="metodo-1"></div>
+				<p>Formação <b>dinâmica colaborativa</b> e <b>interativa</b> entre alunos e professores</p>
+			</div>
+			<div class="bl-metodo">
+				<div class="metodo-2"></div>
+				<p>Promover a reflexão, a criação, a produção e a multiplicação do saber em comunicação;</p>
+			</div>
+			<div class="bl-metodo">
+				<div class="metodo-3"></div>
+				<p>Acompanhamento constante de um professor da faculdade Cásper Libero.</p>
+			</div>
+			<div class="bl-metodo">
+				<div class="metodo-4"></div>
+				<p>Promover a excelência no ensino e na prática profissional da comunicação.</p>
+			</div>
+		</div>
+	</section>
+<!--Bloco Como Funciona-->
+	<section class="cd-bl-como-funciona">
+		<h1 class="title-como-funciona">Como funciona <span>Estude online com a cásper digital<span></h1>
+			<!--videos bootstrap-->
+				<div class="nav-range">
+				<label> Banner
+  					<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  				</label>
+  				</div>
+		        <div id="myCarousel" class="carousel slide">
+		          <ol class="carousel-indicators">
+		            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+		            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+		            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+		          </ol>
+		          <div class="carousel-inner">
+		            <div class="col-lg-12 item active">
+						<div class="bl-funciona-texto">
+							<div class="img-rotativo"></div>
+							<p>Venha viver a experiência casperiana de estudar online, em qualquer lugar e a qualquer hora, você só precisa de um dispositivo conectado à Internet (computador, notebook, tablet ou smartphone).</p>
+						</div>
+		            </div>
+		            <div class="col-lg-12 item">
+		              	<div class="bl-funciona-texto">
+							<div class="img-rotativo"></div>
+							<p>Todo o conteúdo está disponível em uma plataforma digital, que chamamos de ambiente virtual de aprendizagem, e lá você encontrará todos os módulos com materiais específicos para seu curso: e-books, videoaulas, quizes e leituras complementares para seu aproveitamento.</p>
+						</div>
+		            </div>
+		            <div class="col-lg-12 item">
+		              	<div class="bl-funciona-texto">
+							<div class="img-rotativo"></div>
+							<p>Você terá 30 dias para realizar o curso. Caso não consiga concluir neste prazo, a Cásper Digital dá mais 30 dias para você finalizar tudo.</p>
+						</div>
+		            </div>
+                <div class="col-lg-12 item">
+		              	<div class="bl-funciona-texto">
+							<div class="img-rotativo"></div>
+							<p>O conteúdo dos cursos é trabalhado de forma que permita sua autonomia e protagonismo, se alguma dúvida surgir, temos uma equipe disponível para te auxiliar.</p>
+						</div>
+		            </div>
+                <div class="col-lg-12 item">
+		              	<div class="bl-funciona-texto">
+							<div class="img-rotativo"></div>
+							<p>A nossa equipe auxiliará você nas questões relativas ao acesso à plataforma digital e demais dificuldades técnicas.</p>
+						</div>
+		            </div>
+                <div class="col-lg-12 item">
+		              	<div class="bl-funciona-texto">
+							<div class="img-rotativo"></div>
+							<p>Todos os nossos cursos certificam os alunos que alcancem 70% de aproveitamento total nas atividades avaliativas.</p>
+						</div>
+		            </div>
+		          </div>
+		          <div class="navegacao">
+		          	<a class="left carousel-control" href="#myCarousel" data-slide="prev"><img class="arrow-left"  src="assets/images/svg/arrow-left.svg"></a>
+		          	<a class="right carousel-control" href="#myCarousel" data-slide="next"><img class="arrow-right"  src="assets/images/svg/arrow-right.svg"></a>
+		          </div>
+		        </div>
+	</section>
+<!--Tradição-->
+	<section class="cd-bl-tradicao">
+		<h2 class="title-tradicao-casper">A cásper libero é a mais tradicional faculdade de comunicação do pais!</h2>
+		<div class="bl-tradicao-texto">
+			<p class="topic-casper"><span>1º escola superior</span>de Jornalismo do Brasil</p>
+			<p class="topic-casper"><span>71 anos de</span>tradição</p>
+		</div>
+	</section>
+<!--Experiência-->
+	<section class="cd-bl-experiencia">
+		<p class="text-description">A <b>Cásper Digital, </b>representa toda a tradição da faculdade Cásper Libero unindo inovação e tecnologia no ensino à distancia para propocionar experiência única com seus alunos. </p>
+		<p class="text-description">Extensão da faculdade física.</p>
+		<div class="bl-experiencia-icones">
+			<div class="bl-icone">
+				<div class="icon-base icon-1"></div>Excelência
+			</div>
+			<div class="bl-icone">
+				<div class="icon-2"></div>Autonomia
+			</div>
+			<div class="bl-icone">
+				<div class="icon-3"></div>Flexibilidade
+			</div>
+			<div class="bl-icone">
+				<div class="icon-4"></div> Tradição
+			</div>
+			<div class="bl-icone">
+				<div class="icon-5"></div>Inovação
+			</div>
+			<div class="bl-icone">
+				<div class="icon-6"></div>Protagonismo
+			</div>
+		</div>
+		<h3 class="title-tradicao-casper">Venha viver essa experiência com a gente. </h3>
+	</section>
+<!--Bloco Cursos-->
+	<section class="cd-banner-cursos">
+	  <div class="chamada-cursos">
+	    <h1>Escolha o seu Curso <br>
+	      <span>Pós-Graduação em</span>
+	    </h1>
+	  </div>
+	  <!--Menu Cursos-->
+	  <ul class="nav-cursos">
+	    <li class="active"><a data-toggle="tab" href="#curso1" class="link-menu">Produção e Práticas Jornalísticas na Contemporaneidade</a></li>
+	    <li><a data-toggle="tab" href="#curso2" class="link-menu">Master em Comunicação Organizacional</a></li>
+	    <li><a data-toggle="tab" href="#curso3" class="link-menu">Marketing e Comunicação Publicitária</a></li>
+	  </ul>
+
+	  <div class="tab-content tab-cursos">
+	<!--Conteúdo Curso 1-->
+	    <div id="curso1" class="tab-pane fade in active">
+	      <div class="titulo-curso">
+	        <span class="status status-on">Disponível</span>
+	        <h2>Produção e Práticas Jornalísticas na Contemporaneidade</h2>
+	      </div>
+	      <ul class="topicos-curso">
+	        <li>Público Alvo:<span>Gestores de comunicação e relações públicas</span></li>
+	        <li>Carga Horária:<span> 432 horas/aula</span></li>
+	        <li>Lorem Ipsum: <span>Gestores de comunicação e relações públicas</span></li>
+	        <li>Lorem Ipsum: <span> 432 horas/aula</span></li>
+	      </ul>
+	      <div class="cd-descricao-curso">
+	        <div class="item">
+	          <h4>Descrição do Curso </h4>
+	          <p>Este curso aborda as práticas e processos contemporâneos da comunicação organizacional e da área de relações públicas, habilitando o aluno a pensar o planejamento integrado e gerir o conteúdo organizacional a partir das necessidades do mercado atual. As disciplinas oferecidas trafegam por conteúdos como identidade, imagem e reputação nas organizações, gestão de crises, governança corporativa e sustentabilidade, e ainda temas extremamente recentes, a exemplo de comunicação com empregados, mensuração de resultados e gestão de projetos culturais, sociais e esportivos.</p>
+	        </div>
+	        <div class="item">
+	          <h4>Área: </h4>
+	          <p>Produção Audiovisual, Roteiro, Filmagem, Edição e Sonoplastia</p>
+	          <h4>Pré-Requisitos: </h4>
+	          <p>Produção Audiovisual, Roteiro, Filmagem, Edição e Sonoplastia</p>
+	          <h4>Incrições: </h4>
+	          <p>Inscrições Abertas</p>
+	          <h4>Início Previsto: </h4>
+	          <p>20 de Outubro de 2018</p>
+	        </div>
+	      </div>
+	      <div class="actions">
+	        <a href="#" class="btns-padrao action-big">Inscreva-se</a>
+	        <a href="#" class="btns-padrao btn-pdf">Baixar Apresentação do Curso em PDF</a>
+	      </div>
+	      <!--Itens do Curso-->
+	      <section class="cd-bl-itens-curso">
+	        <ul class="nav nav-tabs nav-itens-curso">
+	          <li class="active"><a data-toggle="tab" href="#tab1-curso1">Objetivo</a></li>
+	          <li><a data-toggle="tab" href="#tab2-curso1">Docente</a></li>
+	          <li><a data-toggle="tab" href="#tab3-curso1">Conteúdo Programático</a></li>
+	          <li><a data-toggle="tab" href="#tab4-curso1">Investimento</a></li>
+	          <li><a data-toggle="tab" href="#tab5-curso1">Fale Conosco</a></li>
+	          <li><a data-toggle="tab" href="#tab6-curso1">Informações Importantes</a></li>
+	        </ul>
+
+	        <div class="tab-content">
+	          <div id="tab1-curso1" class="tab-pane fade in active">
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="tab2-curso1" class="tab-pane fade">
+	            <p>Está funcionando a mudança de fases</p>
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="tab3-curso1" class="tab-pane fade">
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="tab4-curso1" class="tab-pane fade">
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="tab5-curso1" class="tab-pane fade">
+	             <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="tab6-curso1" class="tab-pane fade">
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	        </div>
+	      </section>
+	    </div>
+	<!--Conteúdo Curso 2-->
+	      <div id="curso2" class="tab-pane fade">
+	        <div class="titulo-curso">
+	          <span class="status status-off">Indisponível</span>
+	          <h2>Master em Comunicação Organizacional</h2>
+	        </div>
+	        <ul class="topicos-curso">
+	          <li>Público Alvo:<span>Gestores de comunicação e relações públicas</span></li>
+	          <li>Carga Horária:<span> 432 horas/aula</span></li>
+	          <li>Lorem Ipsum: <span>Gestores de comunicação e relações públicas</span></li>
+	          <li>Lorem Ipsum: <span> 432 horas/aula</span></li>
+	        </ul>
+	        <div class="cd-descricao-curso">
+	            <div class="item">
+	              <h4>Descrição do Curso </h4>
+	              <p>Lorem Ipsum és un text de farciment usat per la indústria de la tipografia i la impremta. Lorem Ipsum ha estat el text estàndard de la indústria des de l'any 1500, quan un impressor desconegut va fer servir una galerada de text i la va mesclar per crear un llibre de mostres tipogràfiques. No només ha sobreviscut cinc segles, sinó que ha fet el salt cap a la creació de tipus de lletra electrònics, romanent essencialment sense canvis. Es va popularitzar l'any 1960 amb el llançament de fulls Letraset que contenien passatges de Lorem Ipsum, i més recentment amb programari d'autoedició com Aldus Pagemaker que inclou versions de Lorem Ipsum.</p>
+	            </div>
+	            <div class="item">
+	              <h4>Área: </h4>
+	              <p>Produção Audiovisual, Roteiro, Filmagem, Edição e Sonoplastia</p>
+
+	              <h4>Pré-Requisitos: </h4>
+	              <p>Produção Audiovisual, Roteiro, Filmagem, Edição e Sonoplastia</p>
+
+	              <h4>Incrições: </h4>
+	              <p>Inscrições Abertas</p>
+
+	              <h4>Início Previsto: </h4>
+	              <p>20 de Outubro de 2018</p>
+	            </div>
+	        </div>
+	        <div class="actions">
+	          <a href="#" class="btns-padrao action-big">Inscreva-se</a>
+	          <a href="#" class="btns-padrao btn-pdf">Baixar Apresentação do Curso em PDF</a>
+	        </div>
+
+	        <!--Itens do Curso-->
+	        <section class="cd-bl-itens-curso">
+	        <ul class="nav nav-tabs">
+	          <li class="active"><a data-toggle="tab" href="#tab1-curso2">Objetivo</a></li>
+	          <li><a data-toggle="tab" href="#tab2-curso2">Docente</a></li>
+	          <li><a data-toggle="tab" href="#tab3-curso2">Conteúdo Programático</a></li>
+	          <li><a data-toggle="tab" href="#tab4-curso2">Investimento</a></li>
+	          <li><a data-toggle="tab" href="#tab5-curso2">Fale Conosco</a></li>
+	          <li><a data-toggle="tab" href="#tab6-curso2">Informações Importantes</a></li>
+	        </ul>
+
+	        <div class="tab-content">
+	          <div id="tab1-curso2" class="tab-pane fade in active">
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="tab2-curso2" class="tab-pane fade">
+	            <p>Está funcionando a mudança de fases</p>
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="tab3-curso2" class="tab-pane fade">
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="tab4-curso2" class="tab-pane fade">
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="tab5-curso2" class="tab-pane fade">
+	             <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="tab6-curso2" class="tab-pane fade">
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	        </div>
+	        </section>
+	      </div>
+	<!--Conteúdo Curso 3-->
+	      <div id="curso3" class="tab-pane fade">
+	        <div class="titulo-curso">
+	          <span class="status status-off">Indisponível</span>
+	          <h2>Marketing e Comunicação Publicitária</h2>
+	        </div>
+	        <ul class="topicos-curso">
+	          <li>Público Alvo:<span>Gestores de comunicação e relações públicas</span></li>
+	          <li>Carga Horária:<span> 432 horas/aula</span></li>
+	          <li>Lorem Ipsum: <span>Gestores de comunicação e relações públicas</span></li>
+	          <li>Lorem Ipsum: <span> 432 horas/aula</span></li>
+	        </ul>
+	        <div class="cd-descricao-curso">
+	            <div class="item">
+	              <h4>Descrição do Curso </h4>
+	              <p>Lorem Ipsum és un text de farciment usat per la indústria de la tipografia i la impremta. Lorem Ipsum ha estat el text estàndard de la indústria des de l'any 1500, quan un impressor desconegut va fer servir una galerada de text i la va mesclar per crear un llibre de mostres tipogràfiques. No només ha sobreviscut cinc segles, sinó que ha fet el salt cap a la creació de tipus de lletra electrònics, romanent essencialment sense canvis. Es va popularitzar l'any 1960 amb el llançament de fulls Letraset que contenien passatges de Lorem Ipsum, i més recentment amb programari d'autoedició com Aldus Pagemaker que inclou versions de Lorem Ipsum.</p>
+	            </div>
+	            <div class="item">
+	              <h4>Área: </h4>
+	              <p>Produção Audiovisual, Roteiro, Filmagem, Edição e Sonoplastia</p>
+
+	              <h4>Pré-Requisitos: </h4>
+	              <p>Produção Audiovisual, Roteiro, Filmagem, Edição e Sonoplastia</p>
+
+	              <h4>Incrições: </h4>
+	              <p>Inscrições Abertas</p>
+
+	              <h4>Início Previsto: </h4>
+	              <p>20 de Outubro de 2018</p>
+	            </div>
+	        </div>
+	        <div class="actions">
+	          <a href="#" class="btns-padrao action-big">Inscreva-se</a>
+	          <a href="#" class="btns-padrao btn-pdf">Baixar Apresentação do Curso em PDF</a>
+	        </div>
+	        <!--Itens do Curso-->
+	        <section class="cd-bl-itens-curso">
+	        <ul class="nav nav-tabs">
+	          <li class="active"><a data-toggle="tab" href="#home">Objetivo</a></li>
+	          <li><a data-toggle="tab" href="#menu1">Docente</a></li>
+	          <li><a data-toggle="tab" href="#menu2">Conteúdo Programático</a></li>
+	          <li><a data-toggle="tab" href="#menu3">Investimento</a></li>
+	          <li><a data-toggle="tab" href="#menu4">Fale Conosco</a></li>
+	          <li><a data-toggle="tab" href="#menu5">Informações Importantes</a></li>
+	        </ul>
+
+	        <div class="tab-content tab-itens">
+	          <div id="home" class="tab-pane fade in active">
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="menu1" class="tab-pane fade">
+	            <p>Está funcionando a mudança de fases</p>
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="menu2" class="tab-pane fade">
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="menu3" class="tab-pane fade">
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="menu4" class="tab-pane fade">
+	             <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	          <div id="menu5" class="tab-pane fade">
+	            <p>Habilitar o gestor da comunicação integrada a pensar e agir dentro das atuais tendências e necessidades do mercado;</p>
+	            <p>Fornecer bases teóricas/conceituais compassadas com as novas fronteiras da comunicação organizacional e da área de relações públicas;</p>
+	            <p>Trazer ao aluno uma visão panorâmica das tendências do mercado de comunicação organizacional e da área de relações públicas.</p>
+	          </div>
+	        </div>
+	        </section>
+	      </div>
+	  </div>
+	</section>
+<!--Contato-->
+	<section class="cd-bl-contato">
+    <div class="container">
+      <div class="bl-faleconosco">
+        <h3>Fale Conosco</h3>
+        <h2>entre em contato com cásper digital</h2>
+      </div>
+      <div class="bl-contato-icones">
+        <div class="contato-ico">
+          <div class="icon-fale"></div>
+          <h4><span class="text-small">(11)</span> 3170-5438</h4>
+          <p>Entre em contato pelo telefone, de segunda à sexta das 8h30 às 18h30.</p>
+        </div>
+        <div class="contato-ico">
+          <div class="icon-local"></div>
+          <h4>Conheça o Campus</h4>
+          <p>Avenida Paulista, 900 <br>6º andar Bela Vista,<br> São Paulo - SP</p>
+        </div>
+      </div>
+    </div>
+	</section>
+<!--Footer-->
+	<footer>
+	</footer>
+</main>
+
+
+<!--Funcionamento Owl - Vídeos e Coordenadores-->
+<script>
+  $(document).ready(function(){
+    $('.owl-videos').owlCarousel({
+        items:4,
+        merge:true,
+        loop:true,
+        margin:10,
+        stagePadding: 20,
+        video:true,
+        nav:true,
+              navText: [
+              '<span class="arrow-carousel"><img src="assets/images/Caret-Left.svg"></span>',
+              '<span class="arrow-carousel"><img src="assets/images/Caret-Right.svg"></span>'
+      ],
+        lazyLoad:true,
+        center:true,
+        responsive:{
+            320:{
+                items:1
+            },
+            600:{
+                items:4
+            }
+        }
+    })
+  });
+
+  $('.owl-coordenadores').owlCarousel({
+    loop:true, // loop is true up to 1199px screen.
+    nav:true, // is true across all sizes
+    margin:10, // margin 10px till 960 breakpoint
+    responsiveClass:true, // Optional helper class. Add 'owl-reponsive-' + 'breakpoint' class to main element.
+
+    responsive:{
+      0:{
+        items:1 // In this configuration 1 is enabled from 0px up to 479px screen size
+      },
+
+      640:{
+        items:2, // from 480 to 677
+        nav:true // from 480 to max
+      },
+
+     768:{
+        items:3, // from this breakpoint 678 to 959
+        center:true // only within 678 and next - 959
+      },
+
+      1025:{
+        items:4, // from this breakpoint 960 to 1199
+        margin:20, // and so on...
+        center:false
+
+      },
+
+      1300:{
+        items:5,
+        loop:false,
+        margin: 50,
+      }
+    }
+});
+</script>
+</body>
+</html>

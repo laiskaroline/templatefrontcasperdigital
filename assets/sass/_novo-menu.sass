@@ -1,0 +1,84 @@
+.menu-principal
+	display: flex!important
+	justify-content: space-between!important
+
+.itens-menu
+	display: flex
+
+header
+	background: #314b64
+
+.menu-principal
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 99999
+	display: flex!important
+	justify-content: space-between!important
+
+.logos
+	padding: 10px 15px
+
+.logo-faculdade
+	padding: 5px 15px 0 0
+	border-right: 1px solid #fff
+
+.logo-casper
+	padding-left: 15px
+
+.menu
+	li
+		margin-right: 20px
+
+		a
+			font-family: $font-principal
+			font-weight: 400
+			color: #fff
+			font-size: 14px
+			text-transform: uppercase
+			transition: .5s
+			&:hover
+				text-decoration: none
+				border-bottom: 1px solid #d9d123
+				transition: .5s
+
+.telefones
+	font-family: $font-principal
+	color: #fff
+	font-size: 20px
+	text-transform: uppercase
+	padding: 12px 60px 0 0
+
+span.text-small
+	font-size: 24px
+	padding: 3px
+
+.descricao
+	display: block
+	font-size: 10px
+
++large
+	.logos
+		padding: 15px
+
+	.menu-principal, nav
+		padding: 0.80vh 0.50vw
+		align-items: center
+
+	.menu
+		ul
+			margin-right: 0
+			li
+				margin-right: 14px
+				a
+					font-size: 12px!important
+					text-align: center
+
+	.baixo-contraste
+		a.interesse
+			padding: 10px
+			text-align: center
+
+	.telefones
+		padding: 0px 10px 0 0

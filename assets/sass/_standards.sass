@@ -1,0 +1,65 @@
+body
+	padding: 0
+	margin: 0
+	overflow-y: scroll
+	-webkit-overflow-scrolling: touch
+
+ul
+	list-style: none
+	margin: 0
+	padding: 0
+
+a, button
+	outline: none
+
+header
+	position: relative
+	z-index: 9
+
+.baixo-contraste
+	background: #ffffff
+
+.alto-contraste
+	a, button
+		outline: none!important
+		text-decorarion: none
+		&:hover
+			text-decorarion: none
+
+
+
+/* Breakpoints */
+
+
+=mini-phone
+	@media (min-width: 320px) and (max-width: 375px)
+		@content
+
+=medio-phone
+	@media (min-width: 400px) and (max-width: 767px)
+		@content
+
+=phone
+	@media (min-width: 320px) and (max-width: 767px)
+		@content
+
+=tablet-vertical
+	@media (width: 768px)
+		@content
+
+
+=tablet-horizontal
+	@media (width: 1024px)
+		@content
+
+=tablet
+	@media (min-width: 768px) and (max-width: 1023px)
+		@content
+
+=intermediario
+	@media (min-width: 768px) and (max-width: 1280px)
+		@content
+
+=large
+	@media (min-width: 1281px) and (max-width: 1199px)
+		@content

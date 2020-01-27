@@ -1,0 +1,195 @@
+.alto-contraste
+	background: #000
+
+.baixo-contraste
+	background: #fff
+
+.arrow-left, .arrow-right
+	width: 110px
+	height: auto
+	+phone
+		width: 60px
+
+.btn-interesse
+	text-transform: uppercase
+	font-family: $font-principal
+	font-weight: 600
+	border-radius: 4px
+	padding: 18px 20px
+	transition: .5s
+	&:hover
+		transition: .5s
+		text-decoration: none
+
+	+large
+		padding: 10px
+		font-size: 12px
+		text-align: center
+
+.btns-padrao
+	text-transform: uppercase
+	font-family: $font-principal
+	font-weight: 600
+	border-radius: 4px
+	padding: 15px 28px
+	font-size: 16px
+	transition: .5s
+	text-decoration: none
+
+	+phone
+		width: 100%
+
+	+tablet
+		.btns-padrao
+			margin-left: auto
+		.btn-libras
+			bottom: 150px
+
+	&:hover
+		transition: .5s
+		text-decoration: none
+
+.btn-libras
+	position: absolute
+	background-color: $ColorBackMainFooter
+	width: 45px
+	height: 45px
+	left: -2px
+	bottom: 550px
+	border-radius: none
+	transition: 0.5s
+	//border: 2px solid #fff
+	&:hover
+		background: #496788
+
+	+phone
+		bottom: 50%
+
+.btn-contrast
+	@extend .btn-libras
+	bottom: 600px
+	+phone
+		bottom: 45%
+
+
+.btn-pdf
+	border: 2px solid #6cecf8
+	color: #0c365e
+	font-weight: 500
+	font-size: 16px
+	&:hover
+		color: #fff
+
+.status
+	border-radius: 5px
+	padding: 5px 25px
+	text-transform: uppercase
+	font-family: $font-principal
+	font-weight: 600
+	font-size: 16px
+
+	+phone
+		font-size: 12px
+
+.status-off
+	border: 1px solid #e02a00
+	color: #e02a00
+
+.status-on
+	border: 1px solid #3c8204
+	color: #3c8204
+
+//Botões Padronizados - Baixo alto-contraste
+a.interesse
+	@extend .btn-interesse
+	border: 1px solid #b5ad24
+	background: transparent
+	color: #f1e412
+	padding: 15px
+	box-shadow: 0px 3px 20px 0.3px rgba(20, 27, 33, .59)
+	&:hover
+		padding: 15px
+		color: #314b64
+		background: #b5ad24
+
+a.action-banner
+	color: #6cecf8
+	border: 1px solid rgba(12, 54, 94, 0.74)
+	background: rgba(12, 54, 94, 0.74)
+	&:hover
+		color: rgba(12, 54, 94, 0.74)
+		border: 1px solid rgba(12, 54, 94, 0.74)
+		background: transparent
+
+a.action-page
+	@extend .action-banner
+	background: #0c365e
+	padding: 15px 45px
+
+a.action-big
+	@extend .action-banner
+	font-size: 24px
+	background: #0c365e
+	padding: 20px 65px
+
+.btn-pdf
+	border: 2px solid #6cecf8
+	color: #0c365e
+	font-weight: 300
+	font-size: 16px
+	&:hover
+		color: #0c365e
+		background: #6cecf8
+
+//Botões Padronizados - Baixo alto-contraste
+.alto-contraste
+	a.interesse
+		@extend .btn-interesse
+		color: #000
+		border: 1px solid #000
+		background: #fff
+		padding: 15px
+		&:hover
+			color: #fff
+			border: 1px solid #fff
+			padding: 15px
+			background: transparent
+
+	a.action-banner
+		color: #000
+		border: 1px solid #000
+		background: #fff
+		&:hover
+			color: #fff
+			border: 1px solid #fff
+			background: #000
+
+	.action-page
+		@extend .action-banner
+		padding: 15px 45px
+
+	.action-big
+		@extend .action-banner
+		font-size: 24px
+		background: #0c365e
+		padding: 20px 65px
+
+	.btn-pdf
+		border: 2px solid #fff
+		color: #fff
+		&:hover
+			background: #fff
+			color: #000
+
+	.status-on
+		background: #fff
+		color: #000
+
+	.status-off
+		color: #fff
+		border: 1px solid #fff
+
+	.btn-libras
+		background: #000
+		&:hover
+			background: #666

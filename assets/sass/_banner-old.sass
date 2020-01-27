@@ -1,0 +1,109 @@
+body
+  background-color: $ColorBackMetodologia
+
+.banner
+  position: relative
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: url(../images/jpg/banner-casper.jpg) no-repeat center center fixed
+  background-size: cover
+  height: 100vh
+
+  +tablet
+    height: 40vh
+
+  +intermediario
+    height: 45vh
+
+  .container
+    height: 100vh
+    margin-top: 90px
+    display: table
+
+    +tablet
+      height: 40vh
+
+    +intermediario
+      height: 43vh
+
+    .align-content
+      display: table-cell
+      vertical-align: middle
+
+.people
+  position: absolute
+  bottom: 0px
+  right: 70px
+  background-image: url(../images/png/people.png)
+  min-width: 60vw
+  background-position: 80% bottom
+  background-repeat: no-repeat
+  height: 100%
+  background-size: contain
+
+  +phone
+    display: none
+
+  +tablet
+    right: 0
+
+  +tablet-horizontal
+    min-width: 690px
+    right: 0
+
+
+.description-chamada
+  width: 421px
+  +tablet
+    width: 55%
+    margin: 2vh 0px 5vw 0px
+    h1
+      font-size: 38px
+    h2
+      font-size: 24px
+    h5
+      font-size: 16px
+  +phone
+    width: 100%
+    padding: 0 30px
+    text-align: center
+
+  h1, h2, h3, h4, h5, a
+    position: relative
+    float: left
+
+  .btns-padrao
+    position: relative
+    margin-top: 23px
+    +phone
+      position: relative
+      top: 45px
+
+.baixo-contraste
+  h1
+    color: $ColorTextBlue
+
+  .banner
+
+    +tablet
+      height: 40vh
+
+    +intermediario
+      height: 45vh
+
+    .container
+      height: 100vh
+      margin-top: 90px
+      display: table
+
+      +tablet
+        height: 40vh
+
+      +intermediario
+        height: 43vh
+
+      .align-content
+        display: table-cell
+        vertical-align: middle

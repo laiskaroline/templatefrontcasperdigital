@@ -1,0 +1,262 @@
+@import "pallete"
+@import "standards"
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i')
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700')
+//@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i')
+
+$font-principal: 'Montserrat', sans-serif
+$font-minimo: 16px
+
+$font-modal: 'Roboto', sans-serif
+
+//$font-principal: 'Droid Serif', serif
+
+body
+	font-family: $font-principal
+	font-size: $font-minimo
+	text-rendering: optimizeLegibility
+	-moz-osx-font-smoothing: grayscale
+	font-smoothing: antialiased
+	-webkit-font-smoothing: antialiased
+	text-shadow: rgba(0, 0, 0, .01) 0 0 1px
+	background-color: #8abcf6
+
+p
+	line-height: auto
+
+h1, h2, h3, h4, h5, h6, a, p
+	font-family: $font-principal
+	text-decoration: none
+	margin-top: 0
+	margin-bottom: 0
+
+h1
+	font-family: $font-principal
+	font-size: 48px
+	font-weight: bold
+	line-height: 1.12
+	text-align: left
+	text-transform: uppercase
+	color: $ColorBackTradicaoCasper
+	padding: 10px 0px
+
+	+phone
+		font-size: 30px
+		text-align: center
+
+h2
+	font-family: $font-principal
+	font-size: 36px
+	font-weight: 300
+	line-height: 1.17
+	text-align: left
+	text-transform: uppercase
+	color: $ColorBackTradicaoCasper
+
+	+phone
+		font-size: 24px
+		text-align: center
+
+h3
+	font-family: $font-principal
+	font-size: 30px
+	font-weight: 300
+
+	+phone
+		font-size: 28px
+
+h4
+	font-family: $font-principal
+	font-size: 24px
+	font-weight: 600
+
+	+phone
+		font-weight: 300
+
+h5
+	font-family: $font-principal
+	font-size: 18px
+	font-weight: 300
+	text-transform: uppercase
+	color: $ColorBackTradicaoCasper
+	padding: 30px 0px 0px 0px
+
+	+phone
+		text-align: center
+
+
+h6
+	font-family: $font-principal
+	font-size: 16px
+	font-weight: 300
+
+p, strong
+	font-family: $font-principal
+	font-size: $font-minimo
+	padding: 10px 0px
+	rey
+
+	+phone
+		padding: 15px
+
+strong
+	font-weight: bold
+	font-size: 18px
+
+span.bold
+	font-weight: 600
+
+.title-video
+	color: $white
+	font-size: 18px
+
+	+phone
+		text-align: center
+
+.title-tradicao-casper
+	font-size: 36px
+	color: $ColorTextTradicaoCasper
+	line-height: 1.1
+	text-transform: uppercase
+	text-align: center
+	font-weight: 300
+	padding: 0 15vw
+
+	+phone
+		font-size: 18px
+		text-align: center
+		line-height: 1.2
+	
+
+.title-como-funciona
+	color: $white
+	font-size: 24px
+	font-weight: 600
+	line-height: 1.1
+	text-transform: uppercase
+	text-align: center
+	span
+		color: $ColorTextComoFunciona
+		font-size: 48px
+		font-weight: 600
+		line-height: 1.1
+		text-transform: uppercase
+		display: block
+		word-wrap: break-word
+		padding: 0 20vw
+		position: relative
+		top: 10px
+
+	+intermediario
+		span
+			padding: 0 5vw
+
+	+tablet
+		span
+			padding: 0 5vw
+
+	+phone
+		font-size: 19px
+		span
+			font-size: 24px
+			padding: 0
+
+
+.text-btn-como-funciona
+	font-size: 18px
+	font-family: $font-principal
+	color: $ColorTextTradicaoCasper
+	a:hover
+		text-decoration: none
+
+.text-title-conheca
+	font-size: 24px
+	color: $ColorTextBlue
+	font-weight: 600
+	text-transform: uppercase
+	line-height: 1.1
+	text-align: left
+	margin: 1vh 0 15px 0
+	span
+		font-size: 18px
+		color: $ColorTextSpanConheca
+		padding: 0px
+		display: block
+
+.title-section
+	font-size: 36px
+	color: $ColorTextBlue
+	line-height: 1.1
+	text-transform: uppercase
+	text-align: center
+	span
+		font-weight: 600
+
+	+phone
+		font-size: 24px
+		font-weight: 300
+
+.text-description
+	color: $ColorTextIcon
+	line-height: 1.2
+	span
+		font-weight: 800
+
+.topic-casper
+	font-size: 24px
+	color: $ColorTextIcon
+	line-height: 1.1
+	text-transform: uppercase
+	text-align: center
+	span
+		color: $ColorTextComoFunciona
+		font-weight: bold
+
+	+phone
+		font-size: 18px
+		font-weight: 300
+		margin-top: 3vh
+
+.ligth
+	font-weight: 300
+
+
+
+.alto-contraste
+	h1, h2, h3, h4, h5, h6, p
+		color: #fff
+
+	.description-chamada
+		h1, h2, h5
+			background: #000
+			padding: 10px
+			margin: 10px 10px 10px 0
+
+	.title-como-funciona
+		span
+			color: #fff
+
+	.title-tradicao-casper
+		background-color: #000
+		color: #fff
+		padding: 0 15vw
+		margin: 2px auto
+
+		+phone
+			font-size: 18px
+			text-align: center
+			line-height: 1.2
+			padding: 15px 60px
+
+	.topic-casper
+		background-color: #000
+		padding: 2vh 5vw
+		span
+			color: #fff
+
+		+phone
+			font-size: 18px
+			font-weight: 300
+			padding: 2vh 22vw
+			margin-top: 3vh

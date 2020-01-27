@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="description" content="Cursos de Pós-Graduação EAD na Faculdade Cásper Líbero">
+  	<!--Específico para o funcionamento das tabs-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--Específico para o funcionamento das tabs-->
+
+	<script type="text/javascript" href="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" href="node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" href="node_modules/angular-resource/angular-resource.min.js"></script>
+	<script type="text/javascript" href="node_modules/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" href="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+	<script type="text/javascript" href="bower_components/ng-module/ng-module.js"></script>
+
+	<script type="text/javascript" href="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/animate.css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+
+	<script type="text/javascript" href="assets/dist/base-landing.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/dist/base-landing.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+	<title>Pós-Graduação - EAD - Cásper Digital</title>
+</head>
+
+<body class="baixo-contraste">
+<!--Menu-->
+	<header class="menu-principal">
+		<div class="logos">
+			<div class="logo-faculdade">
+				<a href="https://casperlibero.edu.br/" name="Faculdade Cásper Líbero" target="_blank" rel="noopener"><img src="assets/images/svg/logo-faculdade-casper-libero.svg" alt="Logo da Faculdade Cásper Líbero" width="100px" /></a>
+			</div>
+			<div class="logo-casper">
+				<a href="https://casperdigital.casperlibero.edu.br/" name="Cásper Digital"><img src="assets/images/svg/logo-casper-digital.svg" alt="Logo Cásper Digital" width="100px"/></a>
+			</div>
+		</div>
+		<nav class="menu">
+			<a href="#" type="button" class="hide-menu hidden-lg"><i class="header__nav-icon header__nav-icon--js fa fa-bars" aria-hidden="true" name="icone menu"></i>Menu</a>
+			<ul>
+				<li><a href="#" name="A Casper">A Cásper</a></li>
+				<li><a href="#" name="Metodologia">Metodologia</a></li>
+				<li><a href="#" name="Como Funciona">Como Funciona</a></li>
+				<li><a href="#" name="Tradição Cásper">Tradição Cásper</a></li>
+				<li><a href="#" name="Cursos">Cursos</a></li>
+				<li><a href="#" name="Contato">Contato</a></li>
+			</ul>
+			<a href="#" name="Botão Registrar Interesse" class="interesse" data-toggle="modal" data-target="#myModalform" >Registrar Interesse</a>
+		</nav>
+		<div class="telefones">
+			<span class="text-small">11</span> 3170-5438
+			<span class="descricao">Atendimento Secretaria</span>
+		</div>
+	</header>
+<!--Banner Principal-->
+	<section class="bloco-principal">
+		<div class="banner">
+			<div type="button" class="btn btn-info btn-lg btn-libras" data-toggle="modal" data-target="#myModal"></div>
+			<div class="container">
+				<div class="description-chamada">
+					<h1>Paixão por<br> Comunicação</h1>
+					<h2>Agora no ensino<br> a distância</h2>
+					<h5>Academia e mercado se encontra aqui.</h5>
+					<a href="#" class="baixo-contraste btns-padrao action-banner" name="Botão Como Funciona">Como Funciona</a>
+				</div>
+				<div class="people"></div>
+			</div>
+		</div>
+	</section>
+<!--Modal VLibras-->
+<div class="container cd-modal-vlibras">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><!--<img src="assets/images/png/vlibras-logo.png" />-->Vlibras</h2>
+        </div>
+        <div class="modal-body">
+        	<div class="instrucoes">
+				<p>Para ativar a linguagem em libras, é necessário <strong>instalar </strong>o aplicativo VLibras em seu <strong> navegador </strong>ou <strong>smartphones</strong> e <strong>tablets</strong>.</p>
+				<h4> Baixe agora mesmo o VLibras</h4>
+			</div>
+			<div class="navegadores">
+				<ul class="nav nav-tabs vlibras">
+					<li class="active"><a data-toggle="tab" href="#navegadores">Para navegadores</a></li>
+					<li><a data-toggle="tab" href="#devices">Para Devices</a></li>
+				</ul>
+
+			<div class="tab-content">
+				<div id="navegadores" class="tab-pane fade in active icons-nav">
+					<a href="#" class="icon-nav"><img src="assets/images/svg/chrome.svg" class="svg" alt="icone navegador Chrome" />Chrome</a>
+					<a href="#" class="icon-nav"><img src="assets/images/svg/firefox.svg" class="svg" alt="icone navegador Firefox"/>Firefox</a>
+					<a href="#" class="icon-nav"><img src="assets/images/svg/safari.svg" class="svg" alt="icone navegador Safari"/>Safari</a>
+				</div>
+				<div id="devices" class="tab-pane fade icons-nav">
+					opções de devices
+				</div>
+			</div>
+          </div>
+          <div class="instrucoes">
+			<p> Caso já possua o aplicativo <strong> instalado em seu navegador</strong>, selecione o texto que será traduzido e clicando com o botão direito do mouse, clique na imagem <span class="vlibras-destaque">Traduzir</span> e pronto.</p>
+			</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!--Modal Formulário de Interesse-->
+<div class="container cd-modal-formulario">
+  <!-- Modal -->
+  <div class="modal fade" id="myModalform" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">X</button>
+          <h2 class="modal-title">Cadastre-se para receber avisos sobre novas turmas deste curso</h2>
+        </div>
+        <div class="modal-body">
+				<form action="">
+					<div class="field"><input type="text" name="nome" maxlength="10" placeholder="Nome"></div>
+					<div class="field"><input type="email" name="email" placeholder="E-mail"></div>
+					<div class="field"><input type="number" name="telefone" placeholder="Telefone"></div>
+					<select name="cursos">
+						<option value="curso" class="titulo">Selecione o curso</option>
+						<option value="curso">Curso 1</option>
+						<option value="curso">Curso 2</option>
+						<option value="curso">Curso 3</option>
+						<option value="curso">Curso 4</option>
+					</select>
+					<div class="field"><textarea type="textarea" rows="10" cols="30" name="mensagem" placeholder="Mensagem"></textarea></div>
+					<div class="field">
+						<p>Para mais informações entre em contato pelo telefone <span class="fone">(11) 3170-5438</span>.</p>
+						<input type="submit" value="TENHO INTERESSE">
+					</div>
+					<div class="seila"></div>
+					
+				</form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<br/>
+<section class="ranges">
+	<input type="range" min="0" max="100" value="50" />
+</section>
+</body>
+</html>

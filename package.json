@@ -1,0 +1,48 @@
+{
+  "name": "novo-projeto",
+  "version": "1.0.0",
+  "description": "Página do Novo Projeto",
+  "main": "gulpfile.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "node server.js",
+    "dev": "echo 'run dev' & npm start",
+    "nodemon": "./node_modules/nodemon/bin/nodemon.js --config nodemon.json --exec npm run dev"
+  },
+  "author": "FCL Web Design Team",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-directive-replace": "^0.3.1",
+    "gulp-foreach": "^0.1.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-postcss": "^6.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-uglify": "^2.1.2",
+    "http": "0.0.0",
+    "jshint": "^2.9.4",
+    "nodemon": "^1.11.0",
+    "postcss-colorblind": "^1.0.0",
+    "postcss-cssnext": "^2.10.0"
+  },
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-resource": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "angular-sanitize": "^1.6.4",
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "bourbon": "^4.3.4",
+    "browser-sync": "^2.18.11",
+    "bulma": "^0.4.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "pdfjs-dist": "^1.8.450"
+  }
+}

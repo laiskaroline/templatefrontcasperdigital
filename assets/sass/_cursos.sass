@@ -1,0 +1,442 @@
+//Detalhes dos cursos
+.cd-banner-cursos
+  .chamada-cursos
+    height: 450px
+    background: url(../images/jpg/banner-cursos.jpg) no-repeat
+    background-position: 50% 25%
+    background-size: cover
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    h1
+      text-align: center
+      color: #6cecf8
+      font-weight: 800
+      padding: 0px 10px
+      span
+        color: #fff
+        font-weight: 400
+        font-size: 28px
+
+    +phone
+      padding: 0 2vw
+      height: 320px
+      h1
+        span
+          font-size: 20px
+
+  //Menu Geral dos Cursos
+  ul.nav-cursos
+    display: flex
+    justify-content: center
+    border-bottom: 1px solid #e1e1e1
+    li
+      width: 25%
+      margin-right: 15px
+      a
+        font-family: $font-principal
+        width: 330px
+        color: #1a3e62
+        text-transform: uppercase
+        padding: 2vh 2vw
+        min-height: 100px
+        display: flex
+        align-items: center
+        text-decoration: none
+        &:hover
+          text-decoration: none
+
+    li.active
+      font-weight: 500
+      border-bottom: 3px solid #1b4a66
+
+    +tablet
+      li
+        width: auto
+        margin-right: 0
+        padding-left: 3vw
+
+        a
+          font-size: 0.9em
+          width: auto
+
+    +phone
+      overflow-x: scroll
+      overflow-y: hidden
+      white-space: normal
+      width: 100%
+      justify-content: flex-start
+
+      li
+        width: auto
+        margin-right: 5px
+
+        a
+          width: 100%
+          font-size: 0.8em
+          border-right: 1px solid #ccc
+          padding: 1vh 8vw
+
+  //Estilo no topo dos cursos
+  .tab-cursos
+    .active
+      li
+        border-bottom: none
+
+  .tab-cursos
+    padding: 10vh 0
+    h2
+      font-weight: 600
+      padding: 5vh 12vw 6vh
+      text-align: center
+
+    @media (min-width: 768px) and (max-width: 1199px)
+      padding: 6vh 0
+
+    +tablet
+      padding: 5vh 0
+      h2
+        padding: 4vh 12vw 4vh
+
+    +phone
+      padding: 5vh 0
+      h2
+        padding: 5vh 5vw 6vh
+
+  .titulo-curso
+    text-align: center
+
+  ul.topicos-curso
+    display: flex
+    padding: 0px 12vw
+
+    li
+      font-weight: 600
+      border-radius: 10px
+      padding: 28px 2vw
+      margin: 0px 7px
+      text-align: left
+      background: #1b4a66
+      color: #fff54c
+      min-width: 24%
+
+      span
+        color: #fff
+        font-weight: 500
+        display: block
+
+        +phone
+          width: 215px
+          height: 50px
+
+
+    +tablet
+      padding: 0px 2vw
+
+      li
+        min-width: 24%
+
+      span
+        width: auto
+
+    +phone
+      padding: 2vh 2vw
+      overflow-x: scroll
+      overflow-y: hidden
+      white-space: normal
+      width: 100%
+
+      li
+        min-width: auto
+        padding: 2vh 5vw
+
+      span
+        line-height: 1.3em
+        font-size: 0.9em
+
+
+  //Descrição e Botões de Ação
+  .cd-descricao-curso
+    display: flex
+    flex-direction: row
+    justify-content: center
+    padding: 42px 0vw
+
+    .item
+      width: 38%
+      padding: 0 3vw
+
+      h4
+        font-family: "Montserrat",sans-serif
+        font-size: 24px
+        font-weight: 600
+        line-height: 1.17
+        text-align: left
+        color: #0c365e
+
+      p
+        font-size: 18px
+        text-align: left
+        font-weight: 400
+        line-height: 1.5em
+        color: $ColorTextDescription
+
+    +tablet
+      padding: 2vh 0
+
+      .item
+        width: 45%
+        padding: 0 3vw
+
+    +phone
+      flex-direction: column
+
+      .item
+        width: 100%
+
+        h4
+          padding: 0 15px
+
+        p
+          font-size: 0.98em
+
+  .actions
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 4vh
+
+    +phone
+      width: 100%
+      padding: 0px 30px
+      text-align: center
+      margin-bottom: 50px
+
+    a
+      margin-bottom: 2vh
+    a.action-big
+      padding: 15px 50px
+
+    a.btn-pdf
+      padding: 15px 60px
+
+      +phone
+        padding: 8px 40px
+        text-align: center
+        font-size: 1em
+        font-weight: 500
+        margin: 0 25px
+
+//Itens do Curso
+.cd-bl-itens-curso
+  display: flex
+  flex-direction: column
+
+  .tab-content
+    min-height: 300px
+    padding: 5vh 20vw
+    color: #fff
+    font-size: 18px
+    line-height: 24px
+    font-weight: 300
+    background-color: #1b4a66
+
+    +intermediario
+      padding: 5vh 10vw
+
+    +tablet-vertical
+      padding: 5vh 10vw
+
+    +phone
+      padding: 5vh 3vw
+
+  .nav-tabs
+    border-bottom: 1px solid #1b4a66
+    padding: 5vh 0 0 0
+    display: flex
+    justify-content: center
+
+    +intermediario
+      padding: 5vh 0vw 0 3vw
+
+    +tablet-vertical
+      display: flex
+      justify-content: end
+      border-bottom: 1px solid #1b4a66
+      padding: 2vh 0 0 0
+      overflow-x: scroll
+      overflow-y: hidden
+      white-space: nowrap
+    +phone
+      display: flex
+      justify-content: end
+      border-bottom: 1px solid #1b4a66
+      padding: 2vh 0 0 0
+      overflow-x: scroll
+      overflow-y: hidden
+      white-space: nowrap
+
+  .nav-tabs>li>a
+    background-color: transparent
+    border-bottom: 1px solid transparent
+    border-bottom-color: transparent
+    height: 75px
+    min-width: 175px
+    width: auto
+    font-size: 14px
+    color: #1b4a66
+    text-align: center
+    font-family: $font-principal
+    text-transform: uppercase
+    align-items: center
+    justify-content: center
+    display: flex
+    border-radius: 10px 10px 0 0
+
+    +intermediario
+      min-width: auto
+
+    +phone
+      border-radius: 0
+      min-width: auto
+
+  .nav-tabs>li>a:hover
+    border-color: transparent
+    background: #5acbda
+
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+    font-weight: 700
+    background-color: #1b4a66
+    border-bottom: 1px solid pink
+    border-bottom-color: transparent
+    border: none
+    color: #6cecf8
+    border-bottom: 2px solid #4caab9
+
+
+//Alto Contraste
+.alto-contraste
+  .cd-banner-cursos
+    .chamada-cursos
+      h1
+        color: #fff
+        background: #000
+        padding: 2vh 2vw
+
+    ul.nav-cursos
+      border-bottom: 1px solid #fff
+      color: #fff
+      li
+        a
+          color: #fff
+      .active
+        border-bottom: 4px solid #fff
+
+    .topicos-curso
+      li, span
+        background: #fff
+        color: #000
+
+    .item
+      h4
+        color: #fff
+
+  //Itens dos cursos
+  .tab-cursos
+
+  //Descrição e Botões de Ação
+  .cd-descricao-curso
+    display: flex
+    flex-direction: row
+    justify-content: center
+    padding: 42px 0vw
+
+    .item
+      width: 38%
+      padding: 0 3vw
+
+      h4
+        font-family: "Montserrat",sans-serif
+        font-size: 24px
+        font-weight: 600
+        line-height: 1.17
+        text-align: left
+
+      p
+        font-size: 18px
+        text-align: left
+        font-weight: 400
+        line-height: 1.5em
+        color: $ColorTextIcon
+
+    +tablet
+      padding: 2vh 0
+
+      .item
+        width: 45%
+        padding: 0 3vw
+
+    +phone
+      flex-direction: column
+
+      .item
+        width: 100%
+
+        h4
+          padding: 0 15px
+
+        p
+          font-size: 0.98em
+          color: $ColorTextIcon
+
+  .actions
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 4vh
+
+    +phone
+      width: 100%
+      padding: 0px 30px
+      text-align: center
+      margin-bottom: 50px
+
+    a
+      margin-bottom: 2vh
+    a.action-big
+      padding: 15px 50px
+
+    a.btn-pdf
+      padding: 15px 60px
+
+      +phone
+        padding: 8px 40px
+        text-align: center
+        font-size: 1em
+        font-weight: 500
+        margin: 0 25px
+
+  //Itens do Curso
+  .cd-bl-itens-curso
+    background: #000
+
+  .tab-content
+    background-color: #000
+    border-bottom: 1px solid #fff
+
+  .nav-tabs
+    border-bottom: 1px solid #fff
+
+  .nav-tabs>li>a
+    color: #fff
+
+  .nav-tabs>li>a:hover
+    border-color: transparent
+    background: #fff
+    color: #000
+
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+    background-color: #fff
+    color: #000
+    border-bottom: 2px solid transparent

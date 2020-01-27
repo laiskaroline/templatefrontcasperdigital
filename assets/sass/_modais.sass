@@ -1,0 +1,250 @@
+//Modal para o VLibras
+.cd-modal-vlibras
+	.modal 
+		top: 10vh
+	strong
+		font-weight: 500
+	.modal-header
+		padding: 0 5vw
+		border-bottom: none
+		position: relative
+		bottom: 15px
+		.close
+			margin-top: -2px
+			border-radius: 100%
+			padding: 10px 15px
+			background: #00345d
+			color: #00f0f7
+			position: absolute
+			right: -15px
+			top: -65px
+			text-shadow: none
+			opacity: 1
+			font-family: $font-modal
+			outline: 0
+
+	.modal-content
+		background: #ffe225
+		padding: 8vh 0px
+		h2.modal-title
+			font-family: $font-modal
+			font-weight: 700
+			color: #8f9291
+			font-size: 35px
+			&:before
+				content: " "
+				background: url(../images/png/vlibras-logo.png) no-repeat center center
+				background-size: 40px
+				margin-right: 5px
+				padding: 0 20px
+		p 
+			font-weight: 300
+			text-align: left
+
+		h4 
+			font-weight: 400
+			margin: 10px 0px
+
+	.modal-body
+		padding: 0
+
+		.instrucoes
+			padding: 0 5vw
+
+	.navegadores
+		background: #fad923
+		margin: 2vh 0
+		padding: 3vh 3vw 5vh 5vw
+		a 
+			color: #000
+			font-weight: 300
+
+		.svg
+			width: 40px
+			margin: 0 15px 0 0
+			filter: none
+
+		.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+			background-color: transparent
+			border: none
+			border-bottom: 3px solid #00345d
+			color: #000
+			font-weight: 400
+
+		.nav>li>a:focus, .nav>li>a:hover
+			text-decoration: none
+			background-color: transparent
+
+		.nav-tabs>li>a:hover
+			border-bottom: 3px solid #00345d
+
+		.nav-tabs
+			border-bottom: 1px solid #5e5e5e
+			margin-bottom: 20px
+
+		.nav-tabs>li>a:hover
+			border-color: transparent
+
+	.icons-nav
+		a 
+			padding: 15px 15px 0 15px
+			text-decoration: none
+
+	span.vlibras-destaque
+		background: #ccc
+		padding: 5px 10px
+		font-weight: 400
+		font-size: 16px
+		&:before
+			content: " "
+			background: url(../images/png/vlibras-logo.png) no-repeat center center
+			background-size: 20px
+			margin-right: 5px
+			padding: 0 10px
+
+.alto-contraste
+	.cd-modal-vlibras
+		.modal-header
+			.close
+				background: #fff
+				color: #000
+		.modal-content
+			background: #000
+			h2.modal-title
+				color: #fff
+				&:before
+					background: url(../images/png/vlibras-logo-branco.png) no-repeat center center
+					background-size: 40px
+					margin-right: 5px
+					padding: 0 20px
+
+		.nav-tabs>li>a
+			color: #000
+		.navegadores
+			background: #fff
+
+		.tab-content
+			background-color: transparent
+			border-bottom: none
+
+		span.vlibras-destaque
+			background: #fff
+			padding: 5px 10px
+			color: #000
+			font-weight: 400
+			font-size: 16px
+			&:before
+				content: " "
+				background: url(../images/png/vlibras-logo.png) no-repeat center center
+				background-size: 20px
+				margin-right: 5px
+				padding: 0 10px
+
+
+
+
+
+		
+
+//Modal para o form de interesse
+.cd-modal-formulario
+	.modal 
+		top: 10vh
+	.modal-content
+		.modal-header
+			padding: 3vh 3vw
+			border-bottom: none
+			.close
+				margin-top: -2px
+				border-radius: 100%
+				padding: 10px 15px
+				background: #00345d
+				color: #00f0f7
+				position: absolute
+				right: -15px
+				top: -10px
+				text-shadow: none
+				opacity: 1
+				font-family: $font-modal
+				outline: 0
+		h2.modal-title
+			text-transform: none
+			line-height: 28px
+			font-size: 24px
+			font-weight: 400
+
+	.modal-body
+		padding: 0 3vw 5vh 3vw
+
+	.labels
+		margin-top: 15px
+
+	.field
+		margin: 10px 0
+
+	input, select, textarea
+		background-color: transparent
+		width: 100%
+		border-radius: 2px
+		border: 1px solid rgba(12, 54, 94, 1)
+		font-weight: 400
+		padding: 0 0 0 15px
+		font-size: 16px
+
+	textarea
+		padding-top: 15px
+		margin-bottom: 10px
+
+	input, select
+		height: 50px
+
+	select option
+		padding-left: 20px
+
+	input[type="submit"]
+		width: 40%
+		float: right
+		background: #0c365e
+		color: #6cecf8
+		padding: 0
+		margin-top: 5px
+
+	.field 
+		p
+			width: 55%
+			float: left
+			font-size: 14px 
+			color: #665D5F
+			font-weight: 300
+
+			span.fone 
+				color: #0c365e
+
+	.seila
+		clear: both
+
+.alto-contraste
+	.cd-modal-formulario
+		.modal-header
+			.close
+				background: #fff
+				border: #000
+				color: #000
+
+		.modal-content
+			background: #000
+
+			input, select, textarea
+				border: 1px solid #fff
+				color: #fff
+
+			input[type="submit"]
+				background: #fff
+				color: #000
+
+			.field
+				p, span.fone
+					color: #fff
+					font-weight: 400
+
+

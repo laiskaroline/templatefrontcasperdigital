@@ -1,0 +1,13 @@
+{
+  "name": "novo-projeto",
+  "description": "Página do próximo projeto",
+  "main": "gulpfile.js",
+  "authors": [
+    "Nome do Autor do Projeto"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "ng-module": "^0.0.3"
+  }
+}

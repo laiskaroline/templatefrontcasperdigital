@@ -1,0 +1,187 @@
+//Método
+section.cd-bl-metodo
+	display: flex
+	justify-content: center
+	background: #f9f9f9
+	flex-direction: column
+	padding: 100px 0
+.metodos
+	display: flex
+	flex-direction: row
+	align-items: flex-start
+	justify-content: center
+	padding: 0px 100px
+	margin: 50px 0px
+
+.metodo-icon
+	min-height: 255px
+	width: 100%
+	padding: 0
+	+phone
+		//min-height: 145px
+
+	+intermediario
+		min-height: 180px
+
+.metodo-1, .metodo-4
+	@extend .metodo-icon
+	background: url(../images/svg/icon-formacao-dinamica.svg) no-repeat
+	background-position: center
+	background-size: contain
+
+.metodo-2
+	@extend .metodo-icon
+	background: url(../images/svg/icon-inovacao.svg) no-repeat
+	background-position: center
+	background-size: contain
+
+.metodo-3
+	@extend .metodo-icon
+	background: url(../images/svg/icon-acompanhamento.svg) no-repeat
+	background-position: center
+	background-size: contain
+
+.bl-metodo
+	width: 20%
+	text-align: center
+	padding: 0 30px
+	p
+		font-family: $font-principal
+		font-size: 18px
+		line-height: 1.33
+		font-weight: 300
+		color: #363636
+
+	+phone
+		margin-bottom: 5vh
+		align-items: center
+		display: flex
+		flex-direction: column
+		align-self: center
+		width: 100%
+		padding: 0 10vw
+
+//Funcionamento
+section.cd-bl-como-funciona
+	background: #6eaae3
+	//padding: 15vh 10vw
+	//max-height: 190vh
+	padding: 15vh 5vw
+	height: auto
+
+	label
+		color: transparent
+		width: 70%
+		text-align: center
+		margin: 2px auto
+		margin-top: 20px
+
+		+phone
+			width: 60%
+			margin-top: 0px
+
+		+intermediario
+			width: 73%
+
+	+tablet
+		//height: 90vh
+
+	+phone
+		padding: 10vh 5vw
+		//height: 80vh
+
+.diagrama
+	border: 1px solid #fff
+	height: 80px
+	margin: 5vh 0
+
+.bl-funciona-texto
+	display: flex
+	flex-direction: column
+	align-items: center
+	p
+		font-family: $font-principal
+		color: #fff
+		text-align: center
+		font-size: 24px
+		line-height: 1.25
+		font-weight: 300
+		padding: 0 22vw
+
+		+phone
+			padding: 0
+			font-size: 18px
+
+		+tablet
+			padding: 0
+
+		+intermediario
+			padding: 0 5vw
+
+.img-rotativo
+	@extend .metodo-icon
+	width: 20%
+	background: url(../images/svg/icon-flexibilidade-yellow.svg) no-repeat
+	background-position: center
+	//background-size: cover
+	//background-size: 50%
+	+phone
+		width: 80%
+		min-height: 140px
+
+.alto-contraste
+	//Funcionamento Alto Contraste
+	section.cd-bl-como-funciona
+		background: #000
+		border-top: 1px solid #fff
+
+	//Metodo em Alto Contraste
+	section.cd-bl-metodo
+		background: #000
+	.bl-metodo
+		p
+			color: #fff
+	.metodo-1, .metodo-4
+		background: url(../images/svg/icon-formacao-dinamica-white.svg) no-repeat
+		background-position: center
+		background-size: cover
+	.metodo-2
+		background: url(../images/svg/icon-inovacao-white.svg) no-repeat
+		background-position: center
+		background-size: cover
+	.metodo-3
+		background: url(../images/svg/icon-acompanhamento-white.svg) no-repeat
+		background-position: center
+		background-size: cover
+
+	.img-rotativo
+		background: url(../images/svg/icon-flexibilidade-white.svg) no-repeat
+		background-position: center
+
+
++intermediario
+	.bl-metodo
+		width: 300px
+		padding: 0 15px
+		p, strong
+			font-size: 16px
++tablet
+	.metodos
+		padding: 0vh 0vw
+	.bl-metodo
+		width: 300px
+		padding: 0 15px
+		p, strong
+			font-size: 14px
++phone
+	section.cd-bl-metodo
+		padding: 5vh 0
+		width: 80%
+		margin: 0 auto
+	.metodos
+		flex-direction: column
+		align-self: center
+		padding: 3vh 0
+
+	.bl-metodo
+		margin-bottom: 0vh

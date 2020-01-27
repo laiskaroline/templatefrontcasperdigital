@@ -1,0 +1,254 @@
+//Css específico para o bloco tradição
+.cd-bl-tradicao
+	//background-color: #436682
+	background: url(../images/jpg/tradicao.jpg) no-repeat center center fixed
+	background-size: cover
+	padding: 10vh 0
+
+	span
+		display: block
+
+	+phone
+		padding: 10vh 0 5vh 0
+
+	+intermediario
+		padding: 5vh 0
+
+.bl-tradicao-texto
+	display: flex
+	flex-direction: row
+	justify-content: space-evenly
+	padding: 10vh 0 0 0
+
+	+phone
+		flex-direction: column
+		padding: 0
+
+	+intermediario
+		padding: 5vh 0 0 0
+
+//Css específico para o bloco Experiências
+.cd-bl-experiencia
+	background-color: #0c365e
+	padding: 8vh 3vw
+
+	.title-tradicao-casper
+		font-size: 30px
+		padding: 0 25vw
+		margin-top: 50px
+
+		+phone
+			font-size: 18px
+			padding: 0px 30px
+			line-height: 1.2
+
+	.text-description
+		font-size: 24px
+		line-height: 30px
+		text-align: center
+		font-weight: 300
+		padding: 0 20vw
+		margin: 10px
+
+		strong
+			font-size: 24px
+
+		+phone
+			font-size: 18px
+			line-height: 24px
+			padding: 0 5vw
+
+		+tablet
+			padding: 0px 30px
+
+		+intermediario
+			font-size: 24px
+			line-height: 28px
+			padding: 0px 14vw
+			margin: 15px 0px
+
+.bl-experiencia-icones
+	display: flex
+	flex-direction: row
+	justify-content: space-evenly
+	flex-wrap: wrap
+	font-size: 29px
+	font-weight: 300
+	width: 90%
+	margin: 2px auto
+
+	+phone
+		padding: 3vh 5vw
+		font-size: 18px
+
+.bl-icone
+	display: flex
+	flex-direction: column
+	text-align: center
+	color: #fff
+	text-transform: uppercase
+	align-items: center
+	min-width: 25%
+	margin: 2vh 2vw
+
+	+tablet
+		min-width: 50%
+		margin: 0
+
+	+phone
+		width: 44%
+		margin: 0 auto
+		font-size: 15px
+
+	img.svgs
+		transform: scale(1.8)
+		+phone
+			transform: scale(1.5)
+			margin-bottom: 15px
+
+.icon-experiencia
+	min-height: 170px
+	width: 50%
+	padding: 0
+	+phone
+		width: 100%
+		min-height: 160px
+
+	+intermediario
+		min-height: 115px
+		margin-bottom: -15px
+		align-self: center
+
+.icon-1, .icon-2, .icon-3, .icon-4, .icon-5, .icon-6
+	background-position: center
+	background-size: cover
+
+.icon-1
+	@extend .icon-experiencia
+	background: url(../images/svg/icon-diamante-yellow.svg) no-repeat
+	background-position: center
+
+	+phone
+		min-height: 105px
+
+.icon-2
+	@extend .icon-experiencia
+	background: url(../images/svg/icon-autonomia.svg) no-repeat
+	background-position: center
+	+phone
+		min-height: 105px
+
+.icon-3
+	@extend .icon-experiencia
+	background: url(../images/svg/icon-flexibilidade-yellow.svg) no-repeat
+	background-position: center
+	+phone
+		min-height: 105px
+
+.icon-4
+	@extend .icon-experiencia
+	background: url(../images/svg/icon-tradicao-yellow.svg) no-repeat
+	background-position: center
+	+phone
+		min-height: 105px
+
+.icon-5
+	@extend .icon-experiencia
+	background: url(../images/svg/icon-inovacao-yellow.svg) no-repeat
+	background-position: center
+	+phone
+		min-height: 105px
+
+.icon-6
+	@extend .icon-experiencia
+	background: url(../images/svg/icon-protagonismo-yellow.svg) no-repeat
+	background-position: center
+	+phone
+		min-height: 105px
+
+
+//Alto Contraste para Tradição e Experiências
+.alto-contraste
+	.cd-bl-tradicao
+		background-color: #333
+
+		+phone
+			padding: 10vh 0 5vh 0
+
+	.cd-bl-experiencia
+		background-color: #000
+		.title-tradicao-casper
+			font-size: 30px
+			width: 100%
+
+			+phone
+				font-size: 18px
+				padding: 0px 30px
+				line-height: 1.2
+				padding: 0 60px
+
+		.text-description
+			strong
+				font-size: 24px
+
+			+phone
+				font-size: 18px
+				line-height: 24px
+				padding: 0 5vw
+
+			+tablet
+				padding: 0px 30px
+
+			+intermediario
+				font-size: 24px
+				line-height: 28px
+				padding: 0px 14vw
+				margin: 15px 0px
+
+	.icon-1
+		@extend .icon-experiencia
+		background: url(../images/svg/icon-diamante-white.svg) no-repeat
+		background-position: center
+
+		+phone
+			min-height: 105px
+
+	.icon-2
+		@extend .icon-experiencia
+		background: url(../images/svg/icon-autonomia-white.svg) no-repeat
+		background-position: center
+
+		+phone
+			min-height: 105px
+
+	.icon-3
+		@extend .icon-experiencia
+		background: url(../images/svg/icon-flexibilidade-white.svg) no-repeat
+		background-position: center
+
+		+phone
+			min-height: 105px
+
+	.icon-4
+		@extend .icon-experiencia
+		background: url(../images/svg/icon-tradicao-white.svg) no-repeat
+		background-position: center
+
+		+phone
+			min-height: 105px
+
+	.icon-5
+		@extend .icon-experiencia
+		background: url(../images/svg/icon-inovacao-white.svg) no-repeat
+		background-position: center
+
+		+phone
+			min-height: 105px
+
+	.icon-6
+		@extend .icon-experiencia
+		background: url(../images/svg/icon-protagonismo-white.svg) no-repeat
+		background-position: center
+
+		+phone
+			min-height: 105px

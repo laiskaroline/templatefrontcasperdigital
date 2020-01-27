@@ -1,0 +1,149 @@
+.cd-bl-contato
+	background-color: #fff
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding: 10vh 5vw
+	+phone
+		padding: 30px 0px
+
+	@media (min-width: 768px) and (max-width: 1199px)
+		padding: 0vh 0vw
+
+.bl-faleconosco
+	background-color: #f3f3f3
+	text-transform: uppercase
+	font-weight: 600
+	text-align: center
+	width: 100%
+	padding: 10vh 10vw
+	margin-bottom: 5vh
+	h3
+		font-family: $font-principal
+		color: #436682
+		font-size: 24px
+		font-weight: 700
+		padding: 10px 0px
+	h2
+		font-weight: 600
+		font-size: 36px
+		text-align: center
+		width: 415px
+		display: inline-block
+
+	@media (min-width: 768px) and (max-width: 1199px)
+		width: 100%
+		padding: 5vh 10vw
+
+	+phone
+		width: 100%
+		padding: 3vh 2vw
+		margin-bottom: 0
+		h2
+			font-size: 18px
+			padding: 0px 30px
+			width: auto
+
+		h3
+			font-size: $font-minimo
+
+.bl-contato-icones
+	display: flex
+	flex-direction: row
+	align-items: center
+
+	h4
+		font-size: 24px
+		font-weight: 700
+		color: #0c365e
+		text-transform: uppercase
+
+	p
+		width: 45%
+		text-align: center
+		font-size: 18px
+		line-height: 24px
+		color: #353535
+		font-weight: 300
+
+	+phone
+		flex-direction: column
+
+	.contato-ico
+		display: flex
+		flex-direction: column
+		width: 60%
+		align-items: center
+
+		+intermediario
+			width: 100%
+
+		h4
+			font-size: 24px
+			font-weight: 700
+			color: #0c365e
+			text-transform: uppercase
+
+		p
+			width: 45%
+			text-align: center
+			font-size: 18px
+			line-height: 24px
+			color: #353535
+			font-weight: 300
+
+		+phone
+			width: 90%
+			margin: 15px 0px
+			p
+				width: auto
+
+.icons-contato-padrao
+	min-height: 220px
+	width: 30%
+	margin: -30px auto
+
+	+tablet
+		width: 60%
+
+	+phone
+		min-height: 86px
+		width: 40%
+		margin: 0px auto
+
+.icon-fale
+	@extend .icons-contato-padrao
+	background: url(../images/svg/icon-fale-conosco-cor.svg) no-repeat
+	background-position: center
+	background-size: cover
+
+.icon-local
+	@extend .icons-contato-padrao
+	background: url(../images/svg/icon-localizacao-cor.svg) no-repeat
+	background-position: center
+	background-size: cover
+
+.alto-contraste
+	.cd-bl-contato
+		background-color: #000
+
+	.bl-faleconosco
+		background-color: transparent
+		border: 1px solid #fff
+		h3
+			color: #fff
+
+	.contato-ico
+		h4, p
+			color: #fff
+
+	.icon-fale
+		background: url(../images/svg/icon-fale-conosco-white.svg) no-repeat
+		background-position: center
+		background-size: cover
+
+
+	.icon-local
+		background: url(../images/svg/icon-localizacao-white.svg) no-repeat
+		background-position: center
+		background-size: cover
